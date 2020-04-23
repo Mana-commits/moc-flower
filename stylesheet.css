@@ -1,0 +1,786 @@
+    /*画面幅調整*/
+    
+    section {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .inner {
+        overflow: hidden;
+    }
+    /*フォント適応*/
+    
+    body,
+    h1,
+    h2,
+    h3,
+    p,
+    span,
+    a {
+        font-family: "Noto Sans JP", sans-serif;
+        line-height: 1.6;
+        letter-spacing: 0.05rem;
+        color: #3f434a;
+        font-weight: initial;
+    }
+    /*ヘッダー*/
+    
+    .header-wrap {
+        background-image: url(img/header/topimg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        position: relative;
+        padding-top: 48px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .header-wrap {
+            height: 100vh;
+            position: relative;
+        }
+    }
+    
+    .top-logo {
+        margin: 0 auto 16px;
+        margin-top: 15vh;
+        background-image: url(img/header/logo.svg);
+        height: 116px;
+        width: 131px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    @media screen and (max-width:768px) {
+        .top-logo {
+            margin: 5vh auto 0 auto;
+        }
+    }
+    
+    .tagline {
+        font-size: 20px;
+        margin: 16px 6vmin 24px;
+        text-align: center;
+        margin-top: 24px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .tagline {
+            font-size: 18px;
+        }
+    }
+    
+    .tagline p {
+        color: #fff;
+    }
+    
+    .header-content {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 120px;
+    }
+    
+    .download {
+        padding: 24px 16px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .download {
+            padding: 24px 16px;
+            height: 97px;
+            position: fixed;
+            bottom: 0px;
+            opacity: .8;
+            background-color: #fff;
+            z-index: 99;
+            width: 100%;
+        }
+    }
+    
+    .AppStore {
+        width: 164px;
+        height: 49px;
+        margin: 0 auto;
+        padding-right: 16px;
+    }
+    
+    .GooglePlay {
+        width: 164px;
+        height: 49px;
+        margin: 0 auto;
+    }
+    
+    .notes {
+        padding: 80px 0 24px 0;
+        font-size: 13px;
+        font-weight: normal;
+    }
+    
+    @media screen and (max-width:768px) {
+        .notes {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+        }
+    }
+    
+    .notes p {
+        color: #fff;
+    }
+    /*サービス*/
+    
+    .service-wrap {
+        display: flex;
+        color: #fff;
+    }
+    
+    .item {
+        min-height: 540px;
+        height: 80vh;
+    }
+    
+    #item-first {
+        background-image: url(img/service/first.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    
+    @media screen and (max-width:768px) {
+        #item-first {
+            height: 100vh;
+        }
+    }
+    
+    #item-second {
+        background-image: url(img/service/second.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    
+    @media screen and (max-width:768px) {
+        #item-second {
+            height: 100vh;
+        }
+    }
+    
+    #item-third {
+        background-image: url(img/service/third.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    
+    @media screen and (max-width:768px) {
+        #item-third {
+            height: 100vh;
+        }
+    }
+    
+    .service-content {
+        padding: 60px 48px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 1s;
+    }
+    
+    .service-content h2 {
+        font-size: 24px;
+    }
+    
+    .service-content p {
+        font-size: 15px;
+        margin-top: 16px;
+        color: #fff;
+    }
+    /*プラン*/
+    
+    .plan-items {
+        display: flex;
+        margin: 0 96px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .plan-items {
+            margin: 0 16px;
+        }
+    }
+    
+    .plan-item {
+        margin-bottom: 16px;
+        background: #fff;
+        border-radius: 12px;
+        height: 252px;
+        flex-grow: 1;
+        flex-basis: 156px;
+        position: relative;
+    }
+    
+    .plan-content {
+        text-align: center;
+        padding: 64px 24px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .plan-content {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+    }
+    
+    .plan-content#plan {
+        background-color: #f5f5f5;
+    }
+    
+    .plan-content#freq {
+        background-color: #fff;
+        margin: auto;
+    }
+    
+    .item-one {
+        margin-right: 16px;
+    }
+    
+    #item-one {
+        background-image: url(img/plan/plan-bouquet.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .plan-title {
+        color: #3F434A;
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+    
+    .plan-note {
+        color: #3F434A;
+        font-size: 13px;
+        text-align: left;
+        margin-left: 96px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .plan-note {
+            margin-left: 16px;
+        }
+    }
+    
+    #item-bouquet {
+        background-image: url(img/plan/plan-one.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .img-budge {
+        position: absolute;
+        top: -10px;
+        right: -8px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .freq {
+            position: relative;
+        }
+    }
+    
+    .freq h3 {
+        font-size: 20px;
+        color: #3F434A;
+        margin-bottom: 24px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .freq h3 {
+            margin-bottom: 24px;
+        }
+        .freq img {
+            transform: translate(-15%, 0px);
+        }
+    }
+    /*種類*/
+    
+    .kinds-wrap {
+        background-color: #EAD5DC;
+        height: 730px;
+        box-sizing: border-box;
+    }
+    
+    @media screen and (max-width:768px) {
+        .kinds-wrap {
+            position: relative;
+            padding-bottom: 10vh;
+            height: auto;
+        }
+    }
+    
+    .kinds-img {
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/kinds/kinds.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 730px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .kinds-img {
+            background-position: center 55px;
+            height: 50vh;
+        }
+    }
+    
+    .kinds-contents {
+        color: #3F434A;
+        text-align: center;
+    }
+    
+    .kinds-title {
+        font-size: 26px;
+        margin-top: 140px;
+        margin-bottom: 48px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .kinds-title {
+            position: absolute;
+            top: 0px;
+            right: 0;
+            left: 0;
+            margin-top: 10vh;
+        }
+    }
+    
+    .kinds-caption {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .kinds-contents h3 {
+        font-size: 22px;
+        margin-top: 24px;
+    }
+    
+    .kinds-contents p {
+        font-size: 15px;
+        margin-top: 24px;
+    }
+    /*鉢*/
+    
+    .base-wrap {
+        height: 810px;
+        box-sizing: border-box;
+        background-color: #E7E3DF;
+        color: #3F434A;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 10vmin 0 0;
+    }
+    
+    @media screen and (max-width:768px) {
+        .base-wrap {
+            height: 1200px;
+            flex-flow: column;
+            padding: 16vmin 0 16vmin;
+        }
+    }
+    
+    .base-align-center {
+        text-align: center;
+    }
+    
+    .base-contents {
+        order: 1;
+        width: 50%;
+        max-height: fit-content;
+    }
+    
+    @media screen and (max-width:768px) {
+        .base-contents {
+            width: 100vw;
+        }
+    }
+    
+    .base-title {
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    @media screen and (max-width:768px) {
+        .base-title {
+            font-weight: normal;
+            font-size: 20px;
+            width: 100vw;
+        }
+    }
+    
+    .base-off {
+        font-size: 14px;
+        text-align: center;
+        height: 30px;
+        width: 206px;
+        background-color: #fff;
+        margin-top: 13px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .base-off span {
+        vertical-align: middle;
+    }
+    
+    .base-center {
+        width: 400px;
+        margin: 0 auto;
+        order: 2;
+        margin-top: 5vh;
+    }
+    
+    @media screen and (max-width:768px) {
+        .base-center {
+            order: 3;
+            margin: 0 6vw;
+            width: 88vw;
+        }
+    }
+    
+    .base-text {
+        font-size: 15px;
+    }
+    
+    .baseline-imgs {
+        margin-top: 50px;
+    }
+    
+    .baseline-img {
+        position: relative;
+        width: 98px;
+        height: 116px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    #bell {
+        background-image: url(img/base/bell.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    #moon {
+        background-image: url(img/base/moon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    #candle {
+        background-image: url(img/base/candle.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .base-budge {
+        position: absolute;
+        bottom: 8px;
+        font-size: 13px;
+        margin: 0 auto;
+        transform: translate(-50%, 0);
+    }
+    
+    .base-order {
+        margin-top: 24px;
+    }
+    
+    .base-order-stamp {
+        font-size: 14px;
+        border: solid 2px #3F434A;
+        width: 100px;
+        height: 56px;
+        text-align: center;
+        float: left;
+        margin-right: 16px;
+    }
+    
+    .base-order-stamp span {
+        vertical-align: middle;
+    }
+    
+    .base-order-text {
+        font-size: 18px;
+    }
+    
+    .base-order-text span {
+        font-size: 13px;
+    }
+    
+    .base-order-note {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    
+    .base-main-img {
+        background-image: url(img/base/base-img.png);
+        height: 730px;
+        min-height: 0;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right bottom;
+        order: 3;
+    }
+    
+    @media screen and (max-width:768px) {
+        .base-main-img {
+            width: 100vmin;
+            height: 730px;
+            order: 2;
+            background-size: contain;
+            background-position: center bottom;
+        }
+    }
+    /*お花のある暮らし*/
+    
+    .lifestyle-scripts {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    
+    @media screen and (max-width:768px) {
+        .lifestyle-scripts {
+            flex-flow: column;
+            margin-top: 24px;
+        }
+    }
+    
+    .lifestyle-contents {
+        font-size: 15px;
+        text-align: center;
+        height: 513px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .lifestyle-contents {
+            height: 100vh;
+            padding-top: 5vh;
+        }
+    }
+    
+    .lifestyle-title {
+        font-size: 26px;
+        margin-top: 105px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .lifestyle-title {
+            margin-top: 0;
+            padding: 0 6vh;
+        }
+        .lifestyle-title h2 {
+            font-size: 22px;
+        }
+    }
+    
+    .lifestyle-script {
+        margin-top: 85px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .lifestyle-script {
+            margin-top: 0;
+        }
+    }
+    
+    .lifestyle-script-title {
+        font-size: 22px;
+        margin-top: 24px;
+    }
+    
+    .lifestyle-script-note {
+        margin-top: 16px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .lifestyle-script-title h3 {
+            font-size: 20px;
+        }
+    }
+    
+    .lifestyle-img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    
+    #wakaba {
+        background-image: url(img/lifestyle/wakaba.PNG);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    #appnotice {
+        background-image: url(img/lifestyle/smartphone.PNG);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    #heart {
+        background-image: url(img/lifestyle/heart.PNG);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    /*テール*/
+    
+    .tale-contents {
+        background-color: #EFDFC5;
+        height: 420px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row;
+    }
+    
+    @media screen and (max-width:768px) {
+        .tale-contents {
+            flex-flow: column;
+        }
+    }
+    
+    .tale-img {
+        background-image: url(img/tale/taleimg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 422px;
+        width: 909px;
+        order: 1;
+    }
+    
+    @media screen and (max-width:768px) {
+        .tale-img {
+            order: 2;
+            background-size: contain;
+            background-position: center bottom;
+            margin: -40px auto 0;
+            height: 50vh;
+            width: 70vh;
+            min-height: 278px;
+            transform: translate(-15%, 0);
+        }
+    }
+    
+    .tale-logo {
+        padding-top: 60px;
+        margin-left: -250px;
+        text-align: center;
+        order: 2;
+    }
+    
+    @media screen and (max-width:768px) {
+        .tale-logo {
+            order: 1;
+            margin: 0 auto;
+            z-index: 1;
+        }
+    }
+    
+    .tale-text p {
+        text-align: center;
+    }
+    /*フッター*/
+    
+    .footer-wrap {
+        height: 406px;
+        background-color: #3F434A;
+        color: #fff;
+        position: relative;
+        padding: 8vmin 8vmin 32vmin;
+        text-decoration: none;
+    }
+    
+    @media screen and (max-width:768px) {
+        .footer-wrap {
+            height: 56vh;
+        }
+    }
+    
+    .links {
+        display: flex;
+        flex-flow: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+    @media screen and (max-width:768px) {
+        .links {
+            flex-flow: column;
+            margin-bottom: 48px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .link {
+            margin-bottom: 16px;
+        }
+    }
+    
+    .link a {
+        color: #fff;
+        font-size: 14px;
+    }
+    
+    .link a:hover {
+        text-decoration: none;
+        color: currentColor;
+    }
+    
+    .IG {
+        background-image: url(img/footer/IGlogo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        top: 76px;
+        right: 24px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .IG {
+            top: 48px;
+            right: 24px;
+        }
+    }
+    
+    .copyright {
+        position: absolute;
+        bottom: 124px;
+        right: 0;
+        left: 0;
+        margin: 0;
+    }
+    
+    .copyright p {
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        opacity: .4;
+    }
+    /*スライドインアニメーション*/
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .slideIn {
+        animation-name: slideIn;
+        animation-duration: 1s;
+    }
